@@ -1,0 +1,15 @@
+<p>
+  Tugas-Ku works Nich!
+</p>
+
+<label>Masukkan Username</label>
+
+<input type="text"
+class="form-control"
+[(ngModel)]="username">
+
+<p>username anda : {{username}}</p>
+
+<button class="btn btn-primary" 
+[disabled]="buttoncheck()"
+(click)="clear()">Add Server</button>
